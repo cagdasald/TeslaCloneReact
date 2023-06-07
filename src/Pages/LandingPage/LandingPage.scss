@@ -1,0 +1,109 @@
+@import "../../styles/variables.scss";
+
+.page {
+  height: 100vh;
+  top: 0;
+  overflow: hidden;
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    color: #000;
+    text-align: center;
+    padding-top: 150px;
+
+    h2{
+        margin-bottom: 10px;
+    }
+    button, .button-wrapper {
+        margin-top: auto;
+        margin-bottom: 20px;
+        width: 300px;
+        padding: 5px 0;
+        font-size: 12px;
+    }
+
+    .shop {
+        background-color: #000;
+        color: #fff;
+        border-radius: 4px;
+    }
+
+    .button-wrapper {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+
+        .black {
+            background: rgba(23, 26, 32, 0.8);
+            backdrop-filter: blur(8px);
+            border-radius: 4px;
+            color: #fff;
+        }
+
+        .white {
+            background: rgba(244, 244, 244, 0.5);
+            backdrop-filter: blur(8px);
+            border-radius: 4px;
+            color: #000;
+        }
+    }
+  }
+  .banner {
+    background-image: url("../../assets/images/bg.jpg");
+
+    .banner-title {
+        color: #fff !important;
+    }
+    .banner-button {
+      color: #fff !important;
+      border: 2px solid #fff;
+      padding: 3px 130px;
+      font-size: 12px;
+    }
+  }
+
+  .model-3 {
+    background-image: url("../../assets/images/model-3.jpg");
+  }
+
+  .model-s {
+    background-image: url("../../assets/images/model-s.jpg");
+  }
+
+  .model-x {
+    background-image: url("../../assets/images/model-x.jpg");
+  }
+
+  .model-y {
+    background-image: url("../../assets/images/model-y.jpg");
+  }
+
+  .roof{
+    background-image: url("../../assets/images/solar-roof.jpg");
+  }
+
+  .panel {
+    background-image: url("../../assets/images/solar-panel.jpg");
+  }
+
+  .accessories {
+    background-image: url("../../assets/images/accessories.jpg");
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .page {
+    .section {
+        background-size: 110% 140% !important;
+    }
+  }
+}
